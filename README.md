@@ -1,5 +1,7 @@
 # shopify-export-gap-filler
 
+[![Tests](https://github.com/RAmuSelo/shopify-export-gap-filler/actions/workflows/tests.yml/badge.svg)](https://github.com/RAmuSelo/shopify-export-gap-filler/actions/workflows/tests.yml)
+
 Enrich your Shopify exports with what the native CSV does not include: rich
 order details, **non-sensitive** payment metadata, and abandoned checkouts.
 
