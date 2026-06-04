@@ -1,0 +1,93 @@
+{
+  "_comment": "Synthetic fixture. The sensitive payment keys below are FAKE and exist ONLY to verify that scrub() strips them. The real queries never request these. No real data of any kind.",
+  "data": {
+    "orders": {
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": "CURSOR_PCI_END"
+      },
+      "edges": [
+        {
+          "cursor": "CURSOR_PCI_ORDER",
+          "node": {
+            "id": "gid://shopify/Order/2001",
+            "name": "#2001",
+            "createdAt": "2025-02-01T12:00:00Z",
+            "processedAt": "2025-02-01T12:01:00Z",
+            "cancelledAt": null,
+            "cancelReason": null,
+            "displayFinancialStatus": "PAID",
+            "displayFulfillmentStatus": "FULFILLED",
+            "paymentGatewayNames": ["bogus_gateway"],
+            "sourceName": "web",
+            "tags": [],
+            "note": null,
+            "confirmationNumber": "PCI000TEST",
+            "clientIp": "192.0.2.55",
+            "currencyCode": "USD",
+            "customAttributes": [],
+            "totalPriceSet": {"shopMoney": {"amount": "59.00", "currencyCode": "USD"}},
+            "subtotalPriceSet": {"shopMoney": {"amount": "59.00", "currencyCode": "USD"}},
+            "totalTaxSet": {"shopMoney": {"amount": "0.00", "currencyCode": "USD"}},
+            "totalDiscountsSet": {"shopMoney": {"amount": "0.00", "currencyCode": "USD"}},
+            "discountCodes": [],
+            "lineItems": {
+              "edges": [
+                {
+                  "node": {
+                    "title": "Test Item",
+                    "quantity": 1,
+                    "originalUnitPriceSet": {"shopMoney": {"amount": "59.00", "currencyCode": "USD"}}
+                  }
+                }
+              ]
+            },
+            "transactions": [
+              {
+                "id": "gid://shopify/OrderTransaction/6001",
+                "kind": "SALE",
+                "status": "SUCCESS",
+                "gateway": "bogus_gateway",
+                "formattedGateway": "Bogus Gateway",
+                "processedAt": "2025-02-01T12:01:05Z",
+                "errorCode": null,
+                "paymentId": "pay_pci_001",
+                "accountNumber": "•••• 1111",
+                "test": false,
+                "amountSet": {"shopMoney": {"amount": "59.00", "currencyCode": "USD"}},
+                "parentTransaction": null,
+                "paymentDetails": {
+                  "creditCardNumber": "•••• •••• •••• 1111",
+                  "creditCardBin": "411111",
+                  "creditCardCompany": "Visa",
+                  "creditCardName": "Fake Buyer",
+                  "creditCardWallet": "apple_pay",
+                  "expirationMonth": 12,
+                  "expirationYear": 2030,
+                  "avsResultCode": "Y",
+                  "cvvResultCode": "M"
+                }
+              }
+            ],
+            "customer": {"id": "gid://shopify/Customer/9999"},
+            "email": "buyer@example.com",
+            "phone": null,
+            "billingAddress": {"country": "United States", "city": "Springfield"},
+            "shippingAddress": {"country": "United States", "city": "Springfield"}
+          }
+        }
+      ]
+    }
+  },
+  "extensions": {
+    "cost": {
+      "requestedQueryCost": 60,
+      "actualQueryCost": 30,
+      "throttleStatus": {
+        "maximumAvailable": 1000,
+        "currentlyAvailable": 970,
+        "restoreRate": 50
+      }
+    }
+  }
+}

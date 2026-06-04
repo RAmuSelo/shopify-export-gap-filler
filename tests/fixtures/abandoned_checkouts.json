@@ -1,0 +1,78 @@
+{
+  "data": {
+    "abandonedCheckouts": {
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": "CURSOR_AC_END"
+      },
+      "edges": [
+        {
+          "cursor": "CURSOR_AC_1",
+          "node": {
+            "id": "gid://shopify/AbandonedCheckout/3001",
+            "abandonedCheckoutUrl": "https://example-store.myshopify.com/recover/abc",
+            "createdAt": "2025-06-01T08:00:00Z",
+            "updatedAt": "2025-06-01T08:30:00Z",
+            "completedAt": null,
+            "taxesIncluded": true,
+            "note": "",
+            "discountCodes": ["SUMMER5"],
+            "totalPriceSet": {"shopMoney": {"amount": "75.00", "currencyCode": "EUR"}},
+            "subtotalPriceSet": {"shopMoney": {"amount": "70.00", "currencyCode": "EUR"}},
+            "totalTaxSet": {"shopMoney": {"amount": "12.50", "currencyCode": "EUR"}},
+            "totalDiscountSet": {"shopMoney": {"amount": "5.00", "currencyCode": "EUR"}},
+            "taxLines": [
+              {"title": "TVA", "priceSet": {"shopMoney": {"amount": "12.50", "currencyCode": "EUR"}}}
+            ],
+            "lineItems": {
+              "edges": [
+                {"node": {"title": "Abandoned Widget", "quantity": 1}},
+                {"node": {"title": "Abandoned Add-on", "quantity": 2}}
+              ]
+            },
+            "customer": {"id": "gid://shopify/Customer/8001", "email": "buyer@example.com"},
+            "billingAddress": {"country": "France", "city": "Paris"},
+            "shippingAddress": {"country": "France", "city": "Paris"}
+          }
+        },
+        {
+          "cursor": "CURSOR_AC_2",
+          "node": {
+            "id": "gid://shopify/AbandonedCheckout/3002",
+            "abandonedCheckoutUrl": "https://example-store.myshopify.com/recover/def",
+            "createdAt": "2025-06-02T11:00:00Z",
+            "updatedAt": "2025-06-02T11:05:00Z",
+            "completedAt": null,
+            "taxesIncluded": false,
+            "note": "",
+            "discountCodes": [],
+            "totalPriceSet": {"shopMoney": {"amount": "20.00", "currencyCode": "EUR"}},
+            "subtotalPriceSet": {"shopMoney": {"amount": "20.00", "currencyCode": "EUR"}},
+            "totalTaxSet": null,
+            "totalDiscountSet": {"shopMoney": {"amount": "0.00", "currencyCode": "EUR"}},
+            "taxLines": [],
+            "lineItems": {
+              "edges": [
+                {"node": {"title": "Single Item", "quantity": 1}}
+              ]
+            },
+            "customer": null,
+            "billingAddress": null,
+            "shippingAddress": null
+          }
+        }
+      ]
+    }
+  },
+  "extensions": {
+    "cost": {
+      "requestedQueryCost": 40,
+      "actualQueryCost": 22,
+      "throttleStatus": {
+        "maximumAvailable": 1000,
+        "currentlyAvailable": 978,
+        "restoreRate": 50
+      }
+    }
+  }
+}

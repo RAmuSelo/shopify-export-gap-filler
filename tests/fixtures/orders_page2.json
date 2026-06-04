@@ -1,0 +1,81 @@
+{
+  "data": {
+    "orders": {
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": "CURSOR_PAGE_2_END"
+      },
+      "edges": [
+        {
+          "cursor": "CURSOR_ORDER_3",
+          "node": {
+            "id": "gid://shopify/Order/1003",
+            "name": "#1003",
+            "createdAt": "2025-01-08T14:30:00Z",
+            "processedAt": "2025-01-08T14:31:00Z",
+            "cancelledAt": null,
+            "cancelReason": null,
+            "displayFinancialStatus": "PENDING",
+            "displayFulfillmentStatus": "UNFULFILLED",
+            "paymentGatewayNames": ["manual"],
+            "sourceName": "web",
+            "tags": ["wholesale"],
+            "note": "Net 30 terms.",
+            "confirmationNumber": "DEF456UVW",
+            "clientIp": "198.51.100.22",
+            "currencyCode": "EUR",
+            "customAttributes": [{"key": "po_number", "value": "PO-7788"}],
+            "totalPriceSet": {"shopMoney": {"amount": "540.00", "currencyCode": "EUR"}},
+            "subtotalPriceSet": {"shopMoney": {"amount": "540.00", "currencyCode": "EUR"}},
+            "totalTaxSet": {"shopMoney": {"amount": "0.00", "currencyCode": "EUR"}},
+            "totalDiscountsSet": {"shopMoney": {"amount": "0.00", "currencyCode": "EUR"}},
+            "discountCodes": [],
+            "lineItems": {
+              "edges": [
+                {
+                  "node": {
+                    "title": "Bulk Pack of 12",
+                    "quantity": 3,
+                    "originalUnitPriceSet": {"shopMoney": {"amount": "180.00", "currencyCode": "EUR"}}
+                  }
+                }
+              ]
+            },
+            "transactions": [
+              {
+                "id": "gid://shopify/OrderTransaction/5003",
+                "kind": "AUTHORIZATION",
+                "status": "PENDING",
+                "gateway": "manual",
+                "formattedGateway": "Manual",
+                "processedAt": "2025-01-08T14:31:05Z",
+                "errorCode": null,
+                "paymentId": "pay_def_003",
+                "accountNumber": null,
+                "test": true,
+                "amountSet": {"shopMoney": {"amount": "540.00", "currencyCode": "EUR"}},
+                "parentTransaction": null
+              }
+            ],
+            "customer": {"id": "gid://shopify/Customer/9003"},
+            "email": "wholesale@example.com",
+            "phone": null,
+            "billingAddress": {"country": "Belgium", "city": "Brussels"},
+            "shippingAddress": {"country": "Belgium", "city": "Antwerp"}
+          }
+        }
+      ]
+    }
+  },
+  "extensions": {
+    "cost": {
+      "requestedQueryCost": 58,
+      "actualQueryCost": 31,
+      "throttleStatus": {
+        "maximumAvailable": 1000,
+        "currentlyAvailable": 980,
+        "restoreRate": 50
+      }
+    }
+  }
+}

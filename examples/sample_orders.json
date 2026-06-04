@@ -1,0 +1,227 @@
+[
+  {
+    "order_id": "gid://shopify/Order/1001",
+    "name": "#1001",
+    "created_at": "2025-01-05T10:15:00Z",
+    "processed_at": "2025-01-05T10:16:00Z",
+    "display_financial_status": "PAID",
+    "display_fulfillment_status": "FULFILLED",
+    "currency_code": "EUR",
+    "totals": {
+      "total_price": "129.90",
+      "subtotal_price": "109.90",
+      "total_tax": "20.00",
+      "total_discounts": "10.00"
+    },
+    "source_name": "web",
+    "tags": [
+      "vip",
+      "repeat"
+    ],
+    "note": "Leave at the door, please.",
+    "custom_attributes": [
+      {
+        "key": "gift_wrap",
+        "value": "yes"
+      },
+      {
+        "key": "delivery_slot",
+        "value": "morning"
+      }
+    ],
+    "cancel_reason": null,
+    "cancelled_at": null,
+    "confirmation_number": "ABC123XYZ",
+    "client_ip": "203.0.113.7",
+    "customer": {
+      "id": "gid://shopify/Customer/9001",
+      "email": "buyer@example.com"
+    },
+    "addresses": {
+      "billing": {
+        "country": "France",
+        "city": "Lyon"
+      },
+      "shipping": {
+        "country": "France",
+        "city": "Lyon"
+      }
+    },
+    "discount_codes": [
+      "WELCOME10"
+    ],
+    "line_items": [
+      {
+        "title": "Sample Widget, Large",
+        "quantity": 2,
+        "unit_price": "49.95",
+        "currency": "EUR"
+      },
+      {
+        "title": "Sample Gizmo",
+        "quantity": 1,
+        "unit_price": "10.00",
+        "currency": "EUR"
+      }
+    ],
+    "payment": {
+      "gateway_names": [
+        "bogus_gateway",
+        "manual"
+      ],
+      "display_financial_status": "PAID",
+      "transactions": [
+        {
+          "id": "gid://shopify/OrderTransaction/5001",
+          "kind": "SALE",
+          "status": "SUCCESS",
+          "gateway": "bogus_gateway",
+          "formatted_gateway": "Bogus Gateway",
+          "amount": "129.90",
+          "currency": "EUR",
+          "processed_at": "2025-01-05T10:16:05Z",
+          "error_code": null,
+          "payment_id": "pay_abc_001",
+          "account_number": "•••• 4242",
+          "test": false,
+          "parent_transaction_id": null
+        },
+        {
+          "id": "gid://shopify/OrderTransaction/5002",
+          "kind": "CAPTURE",
+          "status": "SUCCESS",
+          "gateway": "bogus_gateway",
+          "formatted_gateway": "Bogus Gateway",
+          "amount": "129.90",
+          "currency": "EUR",
+          "processed_at": "2025-01-05T10:16:06Z",
+          "error_code": null,
+          "payment_id": "pay_abc_001",
+          "account_number": "•••• 4242",
+          "test": false,
+          "parent_transaction_id": "gid://shopify/OrderTransaction/5001"
+        }
+      ]
+    }
+  },
+  {
+    "order_id": "gid://shopify/Order/1002",
+    "name": "#1002",
+    "created_at": "2025-01-06T09:00:00Z",
+    "processed_at": "2025-01-06T09:01:00Z",
+    "display_financial_status": "REFUNDED",
+    "display_fulfillment_status": "UNFULFILLED",
+    "currency_code": "EUR",
+    "totals": {
+      "total_price": "0.00",
+      "subtotal_price": "0.00",
+      "total_tax": "",
+      "total_discounts": ""
+    },
+    "source_name": "pos",
+    "tags": [],
+    "note": null,
+    "custom_attributes": [],
+    "cancel_reason": "CUSTOMER",
+    "cancelled_at": "2025-01-07T08:00:00Z",
+    "confirmation_number": null,
+    "client_ip": null,
+    "customer": {
+      "id": null,
+      "email": null
+    },
+    "addresses": {
+      "billing": {
+        "country": null,
+        "city": null
+      },
+      "shipping": {
+        "country": null,
+        "city": null
+      }
+    },
+    "discount_codes": [],
+    "line_items": [],
+    "payment": {
+      "gateway_names": [],
+      "display_financial_status": "REFUNDED",
+      "transactions": []
+    }
+  },
+  {
+    "order_id": "gid://shopify/Order/1003",
+    "name": "#1003",
+    "created_at": "2025-01-08T14:30:00Z",
+    "processed_at": "2025-01-08T14:31:00Z",
+    "display_financial_status": "PENDING",
+    "display_fulfillment_status": "UNFULFILLED",
+    "currency_code": "EUR",
+    "totals": {
+      "total_price": "540.00",
+      "subtotal_price": "540.00",
+      "total_tax": "0.00",
+      "total_discounts": "0.00"
+    },
+    "source_name": "web",
+    "tags": [
+      "wholesale"
+    ],
+    "note": "Net 30 terms.",
+    "custom_attributes": [
+      {
+        "key": "po_number",
+        "value": "PO-7788"
+      }
+    ],
+    "cancel_reason": null,
+    "cancelled_at": null,
+    "confirmation_number": "DEF456UVW",
+    "client_ip": "198.51.100.22",
+    "customer": {
+      "id": "gid://shopify/Customer/9003",
+      "email": "wholesale@example.com"
+    },
+    "addresses": {
+      "billing": {
+        "country": "Belgium",
+        "city": "Brussels"
+      },
+      "shipping": {
+        "country": "Belgium",
+        "city": "Antwerp"
+      }
+    },
+    "discount_codes": [],
+    "line_items": [
+      {
+        "title": "Bulk Pack of 12",
+        "quantity": 3,
+        "unit_price": "180.00",
+        "currency": "EUR"
+      }
+    ],
+    "payment": {
+      "gateway_names": [
+        "manual"
+      ],
+      "display_financial_status": "PENDING",
+      "transactions": [
+        {
+          "id": "gid://shopify/OrderTransaction/5003",
+          "kind": "AUTHORIZATION",
+          "status": "PENDING",
+          "gateway": "manual",
+          "formatted_gateway": "Manual",
+          "amount": "540.00",
+          "currency": "EUR",
+          "processed_at": "2025-01-08T14:31:05Z",
+          "error_code": null,
+          "payment_id": "pay_def_003",
+          "account_number": null,
+          "test": true,
+          "parent_transaction_id": null
+        }
+      ]
+    }
+  }
+]

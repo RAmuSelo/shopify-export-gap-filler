@@ -1,0 +1,138 @@
+{
+  "data": {
+    "orders": {
+      "pageInfo": {
+        "hasNextPage": true,
+        "endCursor": "CURSOR_PAGE_1_END"
+      },
+      "edges": [
+        {
+          "cursor": "CURSOR_ORDER_1",
+          "node": {
+            "id": "gid://shopify/Order/1001",
+            "name": "#1001",
+            "createdAt": "2025-01-05T10:15:00Z",
+            "processedAt": "2025-01-05T10:16:00Z",
+            "cancelledAt": null,
+            "cancelReason": null,
+            "displayFinancialStatus": "PAID",
+            "displayFulfillmentStatus": "FULFILLED",
+            "paymentGatewayNames": ["bogus_gateway", "manual"],
+            "sourceName": "web",
+            "tags": ["vip", "repeat"],
+            "note": "Leave at the door, please.",
+            "confirmationNumber": "ABC123XYZ",
+            "clientIp": "203.0.113.7",
+            "currencyCode": "EUR",
+            "customAttributes": [
+              {"key": "gift_wrap", "value": "yes"},
+              {"key": "delivery_slot", "value": "morning"}
+            ],
+            "totalPriceSet": {"shopMoney": {"amount": "129.90", "currencyCode": "EUR"}},
+            "subtotalPriceSet": {"shopMoney": {"amount": "109.90", "currencyCode": "EUR"}},
+            "totalTaxSet": {"shopMoney": {"amount": "20.00", "currencyCode": "EUR"}},
+            "totalDiscountsSet": {"shopMoney": {"amount": "10.00", "currencyCode": "EUR"}},
+            "discountCodes": ["WELCOME10"],
+            "lineItems": {
+              "edges": [
+                {
+                  "node": {
+                    "title": "Sample Widget, Large",
+                    "quantity": 2,
+                    "originalUnitPriceSet": {"shopMoney": {"amount": "49.95", "currencyCode": "EUR"}}
+                  }
+                },
+                {
+                  "node": {
+                    "title": "Sample Gizmo",
+                    "quantity": 1,
+                    "originalUnitPriceSet": {"shopMoney": {"amount": "10.00", "currencyCode": "EUR"}}
+                  }
+                }
+              ]
+            },
+            "transactions": [
+              {
+                "id": "gid://shopify/OrderTransaction/5001",
+                "kind": "SALE",
+                "status": "SUCCESS",
+                "gateway": "bogus_gateway",
+                "formattedGateway": "Bogus Gateway",
+                "processedAt": "2025-01-05T10:16:05Z",
+                "errorCode": null,
+                "paymentId": "pay_abc_001",
+                "accountNumber": "•••• 4242",
+                "test": false,
+                "amountSet": {"shopMoney": {"amount": "129.90", "currencyCode": "EUR"}},
+                "parentTransaction": null
+              },
+              {
+                "id": "gid://shopify/OrderTransaction/5002",
+                "kind": "CAPTURE",
+                "status": "SUCCESS",
+                "gateway": "bogus_gateway",
+                "formattedGateway": "Bogus Gateway",
+                "processedAt": "2025-01-05T10:16:06Z",
+                "errorCode": null,
+                "paymentId": "pay_abc_001",
+                "accountNumber": "•••• 4242",
+                "test": false,
+                "amountSet": {"shopMoney": {"amount": "129.90", "currencyCode": "EUR"}},
+                "parentTransaction": {"id": "gid://shopify/OrderTransaction/5001"}
+              }
+            ],
+            "customer": {"id": "gid://shopify/Customer/9001"},
+            "email": "buyer@example.com",
+            "phone": null,
+            "billingAddress": {"country": "France", "city": "Lyon"},
+            "shippingAddress": {"country": "France", "city": "Lyon"}
+          }
+        },
+        {
+          "cursor": "CURSOR_ORDER_2",
+          "node": {
+            "id": "gid://shopify/Order/1002",
+            "name": "#1002",
+            "createdAt": "2025-01-06T09:00:00Z",
+            "processedAt": "2025-01-06T09:01:00Z",
+            "cancelledAt": "2025-01-07T08:00:00Z",
+            "cancelReason": "CUSTOMER",
+            "displayFinancialStatus": "REFUNDED",
+            "displayFulfillmentStatus": "UNFULFILLED",
+            "paymentGatewayNames": [],
+            "sourceName": "pos",
+            "tags": [],
+            "note": null,
+            "confirmationNumber": null,
+            "clientIp": null,
+            "currencyCode": "EUR",
+            "customAttributes": [],
+            "totalPriceSet": {"shopMoney": {"amount": "0.00", "currencyCode": "EUR"}},
+            "subtotalPriceSet": {"shopMoney": {"amount": "0.00", "currencyCode": "EUR"}},
+            "totalTaxSet": null,
+            "totalDiscountsSet": null,
+            "discountCodes": [],
+            "lineItems": {"edges": []},
+            "transactions": [],
+            "customer": null,
+            "email": null,
+            "phone": null,
+            "billingAddress": null,
+            "shippingAddress": null
+          }
+        }
+      ]
+    }
+  },
+  "extensions": {
+    "cost": {
+      "requestedQueryCost": 112,
+      "actualQueryCost": 58,
+      "throttleStatus": {
+        "maximumAvailable": 1000,
+        "currentlyAvailable": 942,
+        "restoreRate": 50
+      }
+    }
+  }
+}
