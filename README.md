@@ -162,9 +162,10 @@ ISO 8601 dates as returned by the API (no reformatting); raw `shopMoney.amount`
 
 - Without `read_all_orders`, the orders query is limited to the last 60 days;
   the tool warns when `--since` is older and continues on the available window.
-- `customer`, `email`, `phone`, `billingAddress`, `shippingAddress` are
+- `customer`, `email`, `billingAddress`, `shippingAddress` are
   **protected customer data**. Without approval they return `null`; the tool
-  keeps going and leaves the columns blank.
+  keeps going and leaves the columns blank. **`phone` is intentionally not
+  requested** (data minimization — it is not used in any output).
 
 ---
 

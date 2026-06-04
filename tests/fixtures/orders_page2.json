@@ -59,7 +59,6 @@
             ],
             "customer": {"id": "gid://shopify/Customer/9003"},
             "email": "wholesale@example.com",
-            "phone": null,
             "billingAddress": {"country": "Belgium", "city": "Brussels"},
             "shippingAddress": {"country": "Belgium", "city": "Antwerp"}
           }

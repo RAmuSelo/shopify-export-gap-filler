@@ -83,7 +83,6 @@
             ],
             "customer": {"id": "gid://shopify/Customer/9001"},
             "email": "buyer@example.com",
-            "phone": null,
             "billingAddress": {"country": "France", "city": "Lyon"},
             "shippingAddress": {"country": "France", "city": "Lyon"}
           }
@@ -116,7 +115,6 @@
             "transactions": [],
             "customer": null,
             "email": null,
-            "phone": null,
             "billingAddress": null,
             "shippingAddress": null
           }

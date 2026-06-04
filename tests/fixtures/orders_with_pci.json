@@ -71,7 +71,6 @@
             ],
             "customer": {"id": "gid://shopify/Customer/9999"},
             "email": "buyer@example.com",
-            "phone": null,
             "billingAddress": {"country": "United States", "city": "Springfield"},
             "shippingAddress": {"country": "United States", "city": "Springfield"}
           }

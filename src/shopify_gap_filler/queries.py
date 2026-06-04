@@ -87,7 +87,6 @@ query GapFillerOrders($first: Int!, $after: String, $query: String) {{
         }}{transactions}
         customer {{ id }}
         email
-        phone
         billingAddress  {{ country city }}
         shippingAddress {{ country city }}
       }}

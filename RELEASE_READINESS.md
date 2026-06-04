@@ -47,3 +47,13 @@
 
 ## Recommandation
 **Prêt pour un premier commit local : OUI.** Comportement `--dry-run` conforme à la règle stricte ; aucun blocage de sécurité.
+
+## MAJ 2026-06-04 (post-publication + correction Codex)
+- **Repo publié** : https://github.com/RAmuSelo/shopify-export-gap-filler — **public**, branche par défaut **`main`**, remote `origin` présent, dernier commit publié `789ec12`.
+- **gitleaks** : était à 0 finding **avant** la publication ; aucun `.env` publié.
+- **Fichiers de supervision Codex** (`CODEX_SUPERVISION_*`) : **internes, non publiés** (exclus via `.git/info/exclude`).
+- **Correction de minimisation des données** (revue Codex = CORRIGER) : champ **`phone` retiré de la query `orders`** (donnée client protégée non utilisée dans les outputs) ; `email`/`billingAddress`/`shippingAddress` conservés (utilisés, dégradation gérée).
+- **CI** : **aucune** (pas de `.github/workflows/` — prévu dans une passe séparée).
+- **Tag / release** : **aucun** pour l'instant.
+- Cette correction n'est **pas encore commitée** (en attente de validation).
+
