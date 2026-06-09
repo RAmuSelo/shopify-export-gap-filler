@@ -214,6 +214,14 @@ or `--api-version`. Versioning reference:
 
 ---
 
+## Roadmap
+
+Honest, additive next steps (no fabricated demand):
+
+- Optional **concurrent pagination** — the current version is sequential (one request in flight).
+- **NDJSON / streaming output** for very large stores, to avoid holding a full export in memory.
+- **Resume / checkpoint by cursor**, so an interrupted export can continue where it stopped.
+
 ## Contributing
 
 Issues and pull requests are welcome. Please keep the PCI denylist intact and
